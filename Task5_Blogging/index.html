@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Platform websites</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">✎ MyBlog</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button onclick="showPostForm()">Write Post</button>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to <span>My Blog</span></h1>
+            <p>Simple and useful articles about technology, programming and life.</p>
+        </div>
+    </section>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="posts-section">
+            <h2>Latest Posts</h2>
+
+            <!-- Search -->
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="Search posts..."
+                onkeyup="searchPosts()"
+            >
+
+            <div id="posts">
+
+                <article class="post">
+                    <h3>Why Learn Web Development?</h3>
+                    <p class="date">September 10, 2025</p>
+                    <p>
+                        Web development is an interesting skill.
+                        It helps us create websites and web applications.
+                    </p>
+                    <button onclick="readPost('Why Learn Web Development?')">
+                        Read More
+                    </button>
+                </article>
+
+                <article class="post">
+                    <h3>Getting Started with Python</h3>
+                    <p class="date">September 8, 2025</p>
+                    <p>
+                        Python is a simple and powerful programming language
+                        for beginners.
+                    </p>
+                    <button onclick="readPost('Getting Started with Python')">
+                        Read More
+                    </button>
+                </article>
+
+                <article class="post">
+                    <h3>Simple Habits for Students</h3>
+                    <p class="date">September 5, 2025</p>
+                    <p>
+                        Good habits can help students stay focused,
+                        organized and productive.
+                    </p>
+                    <button onclick="readPost('Simple Habits for Students')">
+                        Read More
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Sidebar -->
+        <aside>
+
+            <div class="box" id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hi I'm Ujjwal Kumar Nishad and i am a student and passionate learner.
+                    I love coding, technology and sharing knowledge
+                    through my blog.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Categories</h2>
+                <p>💻 Technology</p>
+                <p>🐍 Programming</p>
+                <p>🌱 Life</p>
+                <p>🌐 Web Development</p>
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Write Post Form -->
+    <div id="postForm" class="form-container">
+
+        <div class="form-box">
+            <h2>Write a New Post</h2>
+
+            <input
+                type="text"
+                id="postTitle"
+                placeholder="Post title"
+            >
+
+            <textarea
+                id="postContent"
+                placeholder="Write your post..."
+            ></textarea>
+
+            <button onclick="addPost()">Publish Post</button>
+            <button onclick="hidePostForm()" class="cancel">
+                Cancel
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Email: ujjwalnishad923@gmail.com</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MyBlog. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
