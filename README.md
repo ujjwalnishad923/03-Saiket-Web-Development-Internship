@@ -20,6 +20,14 @@ This repository contains the projects and tasks completed during my Web Developm
 - Basic HTML contact/registration form
 - Styled using HTML and CSS
 
+### Task 5 - Blogging Platform
+- Simpal blogging platform
+- Built using html , Css and javaScript
+
+### Task 6 - web Application
+- basic and Simpal web application
+- using html, Css and javaScript 
+  
 ## 🛠️ Technologies Used
 
 - HTML
