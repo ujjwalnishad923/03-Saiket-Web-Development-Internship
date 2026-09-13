@@ -1,0 +1,121 @@
+/* Basic Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #182338;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    position: sticky;
+    top: 0;
+}
+
+
+/* Website Name */
+
+nav h2 {
+    color: white;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Navigation Links */
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    padding: 8px 12px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+.menu a:hover {
+    background-color: #4f6df5;
+
+    border-radius: 5px;
+}
+
+
+/* Sections */
+
+section {
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Different Section Colors */
+
+#home {
+    background-color: #e8f1ff;
+}
+
+#about {
+    background-color: #e9f9ed;
+}
+
+#services {
+    background-color: #fff0df;
+}
+
+#contact {
+    background-color: #eee8ff;
+}
+
+
+/* Section Heading */
+
+section h1 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 20px;
+
+    color: #444;
+}

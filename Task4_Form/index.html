@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Contact Form</h1>
+
+        <form>
+
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+
+            <!-- Gender -->
+            <label>Gender</label>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="gender">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender">
+                    Female
+                </label>
+            </div>
+
+
+            <!-- Skills -->
+            <label>Skills</label>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    JavaScript
+                </label>
+            </div>
+
+
+            <!-- Subject -->
+            <label for="subject">Subject</label>
+
+            <select id="subject">
+                <option>Select Subject</option>
+                <option>Web Development</option>
+                <option>Programming</option>
+                <option>Other</option>
+            </select>
+
+
+            <!-- Message -->
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Write your message..."
+                required>
+            </textarea>
+
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
